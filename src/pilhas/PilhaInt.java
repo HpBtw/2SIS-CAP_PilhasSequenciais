@@ -20,6 +20,7 @@ public class PilhaInt {
         } else {
             dados[topo] = elem;
             topo++;
+            // aaaa
         }
     }
 
