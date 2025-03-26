@@ -16,11 +16,10 @@ public class PilhaInt {
 
     public void push(int elem) {
         if (isFull()) {
-            System.out.println("Stack overflow - Limite da pilha excedido");
+            System.err.println("Stack overflow - Limite da pilha excedido");
         } else {
             dados[topo] = elem;
             topo++;
-            // aaaa
         }
     }
 
@@ -28,4 +27,22 @@ public class PilhaInt {
         topo--;
         return dados[topo];
     }
+
+    public boolean isEmpty () {
+        return (topo == 0);
+    }
+
+    public int top() { return (dados[topo-1]); }
+
+    public void esvaziarPilha() {
+        while (!isEmpty()) {
+            System.out.print(pop() + "\t");
+        }
+    }
+
+    public boolean palindromo() {
+
+        return true;
+    }
+
 }

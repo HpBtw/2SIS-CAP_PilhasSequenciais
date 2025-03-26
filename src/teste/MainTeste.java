@@ -11,13 +11,14 @@ public class MainTeste {
         pilha.push(22);
         pilha.push(46);
         pilha.push(44);
-        pilha.push(25);
-        pilha.push(10);
-        System.out.println("Valor retirado da pilha: " + pilha.pop());
-        System.out.println("Valor retirado da pilha: " + pilha.pop());
-        System.out.println("Valor retirado da pilha: " + pilha.pop());
-        System.out.println("Valor retirado da pilha: " + pilha.pop());
-        System.out.println("Valor retirado da pilha: " + pilha.pop());
-        System.out.println("Valor retirado da pilha: " + pilha.pop());
+        pilha.push(55);
+
+        if(pilha.isEmpty())
+            System.out.println("Empty stack");
+        else
+            System.out.println("Valor do topo: " + pilha.top());
+
+        System.out.println("Valores empilhados: ");
+        pilha.esvaziarPilha();
     }
 }
